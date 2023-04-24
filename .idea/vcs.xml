@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Reposample" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/algoritmos---arrays-e-slices-PedroDiOliveira" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/algoritmos---funcoes-PedroDiOliveira" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/algoritmos---strings-PedroDiOliveira" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/algoritmos-em-golang-PedroDiOliveira" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/revisao-1-team" vcs="Git" />
