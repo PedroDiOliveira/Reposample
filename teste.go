@@ -2,13 +2,35 @@ package main
 
 import "fmt"
 
+func CalculateDiscount(currentPurchase float64, purchaseHistory []float64) (float64, error) {
+	var somaHistory float64
+	for i := 0; i < len(purchaseHistory); i++ {
+		somaHistory += purchaseHistory[i]
+	}
+	discount := 0.0
+	switch {
+	case currentPurchase <= 0:
+		return 0, fmt.Errorf("Valor inválido")
+	case somaHistory == float64(0):
+		discount = currentPurchase * 0.1
+	case somaHistory/float64(len(purchaseHistory)) > float64(1000):
+		discount = currentPurchase * 0.2
+	case somaHistory > float64(1000) || somaHistory == float64(0):
+		discount = currentPurchase * 0.1
+	case somaHistory <= float64(500):
+		discount = currentPurchase * 0.02
+	case somaHistory <= float64(1000):
+		discount = currentPurchase * 0.05
+	}
+	return discount, nil
+}
 func main() {
-	var n1 int
-	var n2 int
-
-	if n1 > n2 {
-		fmt.Println("n1 é maior que n2")
+	numero := 500.00
+	slice := []float64{1000, 800, 800, 900}
+	resultado, err := CalculateDiscount(numero, slice)
+	if err != nil {
+		fmt.Println(err)
 	} else {
-		fmt.Println("n2 é maior que n1")
+		fmt.Println(resultado)
 	}
 }
