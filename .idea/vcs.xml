@@ -8,6 +8,8 @@
     <mapping directory="$PROJECT_DIR$/algoritmos---strings-PedroDiOliveira" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/algoritmos---structs-PedroDiOliveira" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/algoritmos-em-golang-PedroDiOliveira" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/algoritmos-ponteiros-PedroDiOliveira" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jogo-da-advinhacao-golenda" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/revisao-1-team" vcs="Git" />
   </component>
 </project>
