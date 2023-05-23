@@ -18,10 +18,11 @@ body{
 }
 
 .apresentacao {
-    margin: 10% 15%;
+    margin: 10% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .apresentacao__conteudo{
@@ -44,6 +45,7 @@ body{
 .apresentacao__links{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .apresentacao__links__link{
