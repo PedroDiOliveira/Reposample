@@ -1,0 +1,30 @@
+body{ 
+    background-color: aqua;
+height: 100vh;
+}
+
+.apresentacao{
+    margin: 50% 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20%;
+    background-color: rgb(163, 163, 163) ;
+}
+
+.apresentacao__titulo{
+    display: flex;
+    align-items: center;
+
+}
+.apresentacao__lista__membro{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+}
+
+.apresentacao__lista{
+    display: flex;
+    align-items:start;
+    margin-bottom: 10px;
+}
