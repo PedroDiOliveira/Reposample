@@ -41,6 +41,7 @@ func calculadoraSimples() float64 {
 			time.Sleep(1 * time.Second)
 			fmt.Printf("O resultado é igual a %g \n", resultado)
 			loope = false
+
 		case 2: // Subtração
 			fmt.Println("Qual o primeiro número?")
 			fmt.Scan(&x)
@@ -52,6 +53,7 @@ func calculadoraSimples() float64 {
 			time.Sleep(1 * time.Second)
 			fmt.Printf("O resultado é igual a %g \n", resultado)
 			loope = false
+
 		case 3: // Multiplicação
 			fmt.Println("Qual o primeiro número?")
 			fmt.Scan(&x)
@@ -63,6 +65,7 @@ func calculadoraSimples() float64 {
 			time.Sleep(1 * time.Second)
 			fmt.Printf("O resultado é igual a %g \n", resultado)
 			loope = false
+
 		case 4: // Divisão
 			fmt.Println("Qual o dividendo?")
 			fmt.Scan(&x)
@@ -74,6 +77,7 @@ func calculadoraSimples() float64 {
 			time.Sleep(1 * time.Second)
 			fmt.Printf("O resultado é igual a %g \n", resultado)
 			loope = false
+
 		default:
 			fmt.Println("Você não digitou um número válido.")
 		}
