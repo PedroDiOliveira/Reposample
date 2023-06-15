@@ -91,6 +91,9 @@ func calculadoraGeometria() float64 {
 	loope = true
 	var raio float64
 	var resultado float64
+	var base float64
+	var altura float64
+
 	for loope {
 		// Interface de escolha de cálculo
 		fmt.Println("-- Calculadora--Simples--")
@@ -120,6 +123,31 @@ func calculadoraGeometria() float64 {
 
 			fmt.Printf("A área do circulo e igual a %.2f metros quadrados\n", resultado)
 			loope = false
+		case 2:
+			fmt.Println("")
+			fmt.Println("Calculamos multiplicando a base pela altura")
+			fmt.Println("")
+
+			time.Sleep(3 * time.Second)
+
+			fmt.Println("Sabendo disso:")
+			fmt.Println("Qual é o valor da base em metros?")
+			fmt.Scan(&base)
+			fmt.Println("Qual o valor da altura em metros?")
+			fmt.Scan(&altura)
+
+			resultado = base * altura
+
+			fmt.Println("Calculando...")
+			time.Sleep(1 * time.Second)
+
+			if base == altura {
+
+			}
+
+			fmt.Printf("A área do quadrado é igual a %.2f metros quadrados\n", resultado)
+			loope = false
+
 		}
 	}
 	return resultado
