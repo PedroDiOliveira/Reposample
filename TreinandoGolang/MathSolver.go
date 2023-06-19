@@ -142,10 +142,11 @@ func calculadoraGeometria() float64 {
 			time.Sleep(1 * time.Second)
 
 			if base == altura {
+				fmt.Printf("A área do quadrado é %.2f\n", resultado)
 
+			} else {
+				fmt.Printf("A área do retangulo é igual a %.2f\n", resultado)
 			}
-
-			fmt.Printf("A área do quadrado é igual a %.2f metros quadrados\n", resultado)
 			loope = false
 
 		}
@@ -155,32 +156,44 @@ func calculadoraGeometria() float64 {
 
 func main() {
 	fmt.Println("-------------------------------------------")
-	fmt.Println("--------- Bem-vindo(a) à calculadora ------")
+	fmt.Println("------- Bem-vindo(a) à calculadora --------")
 	fmt.Println("-------------------------------------------")
 
 	time.Sleep(1 * time.Second)
 
 	// Declaração de variáveis
 	var Materia int // qual calculadora o usuário vai escolher
+	var loope bool
+	loope = true
+	for loope {
+		// Recebendo o valor para Materia, para poder direcionar para a função desejada
+		fmt.Println("Qual assunto vamos abordar? ")
+		time.Sleep(1 * time.Second)
+		fmt.Println("(1) Cálculadora simples")
+		fmt.Println("(2) Geometria")
+		fmt.Println("(3) Coming soon")
+		fmt.Println("")
+		fmt.Scan(&Materia)
+		fmt.Println("")
+		fmt.Println("|-------------------------------------------|")
+		fmt.Println("")
 
-	// Recebendo o valor para Materia, para poder direcionar para a função desejada
-	fmt.Println("Qual assunto vamos abordar? ")
-	time.Sleep(1 * time.Second)
-	fmt.Println("(1) Cálculadora simples")
-	fmt.Println("(2) Geometria")
-	fmt.Println("(3) Coming soon")
-	fmt.Println("")
-	fmt.Scan(&Materia)
-	fmt.Println("")
-	fmt.Println("|-------------------------------------------|")
-	fmt.Println("")
+		switch Materia {
+		case 1:
+			calculadoraSimples()
+			loope = false
 
-	switch Materia {
-	case 1:
-		calculadoraSimples()
-
-	case 2:
-		calculadoraGeometria()
+		case 2:
+			calculadoraGeometria()
+			loope = false
+		default:
+			fmt.Println("Voce não digitou um numero valido!")
+			fmt.Println("")
+			fmt.Println("Tente novamente")
+			fmt.Println("")
+			fmt.Println("")
+			loope = true
+		}
 	}
 	fmt.Println("")
 	fmt.Println("Fechando progama..")
